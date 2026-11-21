@@ -1,0 +1,16 @@
+info:
+  name: Signup
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/auth/signup"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Yash",
+        "email": "yash@example.com",
+        "password": "secret12"
+      }

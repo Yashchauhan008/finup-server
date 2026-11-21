@@ -1,0 +1,36 @@
+info:
+  name: Push
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseUrl}}/sync/push"
+  headers:
+    - name: Authorization
+      value: "Bearer {{token}}"
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "baseRevision": 0,
+        "clientId": "bruno-test",
+        "force": false,
+        "tables": {
+          "accounts": [],
+          "categories": [],
+          "transactions": [],
+          "people": [],
+          "ledger": [],
+          "rules": [],
+          "budgets": [],
+          "goals": [],
+          "tags": [],
+          "txn_tags": [],
+          "receipts": [],
+          "deleted_refs": []
+        },
+        "meta": { "source": "bruno" }
+      }
