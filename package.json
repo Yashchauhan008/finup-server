@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "FinUp sync API (Postgres) — offline-first 2-way sync for app + web",
     "license": "ISC",
-    "author": "rajraiyani.com",
+    "author": "yashchauhan.pro",
     "type": "module",
     "main": "index.js",
     "scripts": {
