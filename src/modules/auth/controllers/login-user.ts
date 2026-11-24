@@ -8,7 +8,7 @@ import { createJWTToken } from '@/shared/utilities/token.js';
 
 export const ValidationSchema = {
     body: z.object({
-        email: z.string().trim().min(1).max(255),
+        email: z.string().trim().toLowerCase().min(1).max(255),
         password: z.string().trim().min(5).max(255),
     }),
 };
